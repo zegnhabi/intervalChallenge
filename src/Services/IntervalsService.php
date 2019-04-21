@@ -136,7 +136,7 @@ class IntervalsService
         $this->DB->Query($inserStatement, []);
     }
 
-    public function clearTable(): void
+    public function clearTable()
     {
         $this->DB->Query("TRUNCATE TABLE intervalChallenge.intervals", []);
     }
