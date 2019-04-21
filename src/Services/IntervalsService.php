@@ -44,7 +44,7 @@ class IntervalsService
      * @param $price
      * @return array
      */
-    public function addInterval($dateStart, $dateEnd, $price): array
+    public function addInterval($dateStart, $dateEnd, $price)
     {
         $ranges = $this->getCurrentRanges();
         $period = new \DatePeriod(
@@ -124,7 +124,7 @@ class IntervalsService
     /**
      *
      */
-    public function saveToDatabase(): void
+    public function saveToDatabase()
     {
         $this->clearTable();
         $inserStatement = "INSERT INTO intervalChallenge.intervals (date_start, date_end, price) VALUES ";
@@ -144,7 +144,7 @@ class IntervalsService
     /**
      * Read the records from the database and maps returning an array.
      */
-    public function readFromDatabase(): void
+    public function readFromDatabase()
     {
         $intervals = $this->DB->Query("SELECT date_start, date_end, price FROM intervalChallenge.intervals", []);
         // You have to map results to the intervals variable:
