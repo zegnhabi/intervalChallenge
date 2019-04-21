@@ -1,3 +1,3 @@
 # intervalChallenge
 
-http://68.183.125.208/
+challenge.rlst.xyz
