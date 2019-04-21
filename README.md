@@ -1,3 +1,3 @@
 # intervalChallenge
 
-challenge.rlst.xyz
+https://challenge.rlst.xyz
